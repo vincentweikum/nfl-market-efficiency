@@ -1,0 +1,21 @@
+name: nfl_market
+version: "1.0.0"
+config-version: 2
+profile: nfl_market
+
+model-paths: ["models"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+
+vars:
+  raw_games_path: "../data/raw/games.csv"
+  first_moneyline_season: 2007   # moneylines are complete from 2007 on
+
+models:
+  nfl_market:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

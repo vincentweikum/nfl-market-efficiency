@@ -1,0 +1,21 @@
+version: 2
+models:
+  - name: fct_games
+    description: Every completed game with no-vig market probabilities and bet outcomes.
+    columns:
+      - name: game_id
+        tests: [unique, not_null]
+      - name: ats_winner
+        tests:
+          - accepted_values: {arguments: {values: ['home', 'away', 'push']}}
+      - name: total_result
+        tests:
+          - accepted_values: {arguments: {values: ['over', 'under', 'push']}}
+  - name: mart_moneyline_calibration
+    description: Calibration of no-vig moneyline probabilities, favorite's side.
+  - name: mart_ats_by_spread
+    description: Favorite cover rate by spread size.
+  - name: mart_home_edge_by_season
+    description: Priced vs realized home field advantage by season.
+  - name: mart_margin_distribution
+    description: Distribution of final margins.

@@ -1,0 +1,99 @@
+{
+  "data": {
+    "games": 7426,
+    "first_season": 1999,
+    "last_season": 2026,
+    "last_game_date": "2026-11-16"
+  },
+  "calibration": {
+    "games": 5209,
+    "dropped_bad_prices": 90,
+    "brier_market": 0.21001826959712405,
+    "logloss_market": 0.6071010445269174,
+    "calibration_slope": 1.0633554844811108,
+    "calibration_slope_ci95": [
+      0.986102192047063,
+      1.1355173590930883
+    ],
+    "big_fav_games": 254,
+    "big_fav_priced": 0.8795900279467603,
+    "big_fav_actual": 0.9173228346456693
+  },
+  "elo_vs_market": {
+    "games": 4750,
+    "brier_market": 0.21046073885799516,
+    "brier_elo": 0.21980435362110798,
+    "logloss_market": 0.6083599740357195,
+    "logloss_elo": 0.6292405884285494,
+    "accuracy_market": 0.6665263157894736,
+    "accuracy_elo": 0.647578947368421,
+    "test_seasons": "2019-2026",
+    "test_brier_market": 0.21066464576928692,
+    "test_brier_blend": 0.2109660924990147,
+    "blend_weight_market": 0.9123298571979264,
+    "blend_weight_elo": 0.1639368345911557
+  },
+  "against_the_spread": {
+    "overall_fav_cover_rate": 0.48790658882402,
+    "games": 7194,
+    "buckets": [
+      {
+        "bucket": "0.5-3",
+        "games": 2546,
+        "fav_cover_rate": 0.49096622152395913,
+        "dog_cover_rate": 0.5090337784760408,
+        "p_value_dog_beats_vig": 0.9347711374545727,
+        "p_value_bonferroni": 1.0
+      },
+      {
+        "bucket": "3.5-6.5",
+        "games": 2471,
+        "fav_cover_rate": 0.490894374747066,
+        "dog_cover_rate": 0.509105625252934,
+        "p_value_dog_beats_vig": 0.9310044202110855,
+        "p_value_bonferroni": 1.0
+      },
+      {
+        "bucket": "7-9.5",
+        "games": 1289,
+        "fav_cover_rate": 0.48176881303335917,
+        "dog_cover_rate": 0.5182311869666408,
+        "p_value_dog_beats_vig": 0.6661229522753696,
+        "p_value_bonferroni": 1.0
+      },
+      {
+        "bucket": "10+",
+        "games": 888,
+        "fav_cover_rate": 0.4797297297297297,
+        "dog_cover_rate": 0.5202702702702703,
+        "p_value_dog_beats_vig": 0.5968686243530675,
+        "p_value_bonferroni": 1.0
+      }
+    ],
+    "breakeven_minus_110": 0.5238095238095238
+  },
+  "home_field": {
+    "home_margin_1999_2009": 2.7144337016574585,
+    "home_margin_2015_on": 1.9170879676440848,
+    "home_spread_1999_2009": 2.5996201657458564,
+    "home_spread_2015_on": 1.9047859791034716,
+    "current_season": 2026,
+    "current_season_games": 142,
+    "current_season_through_week": 10,
+    "current_home_cover_rate": 0.4233576642335766,
+    "current_home_cover_p_value": 0.0871332264753469
+  },
+  "key_numbers": {
+    "share_margin_3": 0.15149474818206302,
+    "share_margin_7": 0.09022353891731753,
+    "share_margin_2": 0.040533261513600864,
+    "share_margin_4": 0.04888230541341233
+  },
+  "big_favorite_backtest": {
+    "bets": 254,
+    "win_rate": 0.9173228346456693,
+    "roi": 0.013303425449546005,
+    "units": 3.379070064184685,
+    "roi_se": 0.019195252647909365
+  }
+}
